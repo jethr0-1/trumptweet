@@ -3,13 +3,13 @@ echo 'Starting TrumpTweet...'
 TRUE='true'
 while [ TRUE='true' ]
 do
-    OGTWEET=$(python3 scraper2.py)
+    OGTWEET=$(python3 grabtweet.py)
     echo 'Tweet found!'
     echo $OGTWEET
     echo 'Waiting 2 minutes...'
     sleep 2m
 
-    NEWTWEET=$(python3 scraper2.py)
+    NEWTWEET=$(python3 grabtweet.py)
     echo 'Tweet found! Checking similarity to last tweet...'
     if [ $NEWTWEET = $OGTWEET ]
     then
