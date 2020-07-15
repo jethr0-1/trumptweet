@@ -20,3 +20,6 @@ Once a return line key is detected, it cuts off the rest of the data and saves i
 Except, after it has stripped the data down to the very latest Tweet, it will check that data against the first Tweet that it found. If they are the same, nothing will happen, and it'll scan for new Tweets again in 2 minutes.
 If it's a NEW Tweet, it'll save the new Tweet and parse that data through to the TTS program.
 
+# Usage
+Just run the trumptweet.sh file, and your done!
+No arguments are needed, but feel free to alter the program to take user input if you wish
