@@ -11,14 +11,14 @@ do
 
     NEWTWEET=$(python3 grabtweet.py)
     echo 'Tweet found! Checking similarity to last tweet...'
-    if [ $NEWTWEET = $OGTWEET ]
+    if [ NEWTWEET = OGTWEET ]
     then
         echo 'Tweet is the same. Waiting 2 minutes then checking again...'
         sleep 2m
 
     else
 	echo 'New tweet found! Printing and activating TTS...'
-	OGTWEET = NEWTWEET
+	OGTWEET=NEWTWEET
 	espeak $OGTWEET'hahaha what an idiot trump is'
         
     fi
