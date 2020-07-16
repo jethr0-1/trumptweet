@@ -19,7 +19,7 @@ do
     else
 	echo 'New tweet found! Printing and activating TTS...'
 	OGTWEET=NEWTWEET
-	espeak $OGTWEET'hahaha what an idiot trump is'
+	espeak "$OGTWEET. hahaha what an idiot trump is"
         
     fi
 done
